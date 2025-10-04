@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:Arial, sans-serif;}
+    body{line-height:1.6;background:#f5f5f5;color:#333;}
+
+    /* Navbar */
+    nav{position:fixed;top:0;left:0;width:100%;background:#222;color:#fff;
+        display:flex;justify-content:center;gap:20px;padding:15px;z-index:1000;}
+    nav a{color:#fff;text-decoration:none;font-weight:bold;}
+    nav a:hover{color:#00bcd4;}
+
+    section{padding:80px 20px;min-height:100vh;}
+
+    /* Home */
+    #home{display:flex;flex-direction:column;align-items:center;justify-content:center;
+          background:linear-gradient(to right,#00bcd4,#2196f3);color:#fff;text-align:center;}
+    #home img{width:150px;height:150px;border-radius:50%;margin:20px 0;border:4px solid #fff;}
+
+    /* About */
+    #about{background:#fff;}
+    #about h2,#projects h2,#contact h2{text-align:center;margin-bottom:20px;color:#222;}
+
+    /* Projects */
+    .projects-container{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+                        gap:20px;padding:20px;}
+    .project{background:#fff;border-radius:10px;padding:20px;box-shadow:0 2px 8px rgba(0,0,0,0.1);}
+    .project h3{margin-bottom:10px;color:#2196f3;}
+
+    /* Contact */
+    #contact{background:#fff;text-align:center;}
+    form{display:flex;flex-direction:column;max-width:400px;margin:auto;gap:10px;}
+    input,textarea{padding:10px;border:1px solid #ccc;border-radius:5px;}
+    button{padding:10px;background:#2196f3;color:#fff;border:none;border-radius:5px;cursor:pointer;}
+    button:hover{background:#1976d2;}
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About Me</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home">
+    <h1>Hello, I'm <span style="color:#ffe082;">Your Name</span></h1>
+    <img src="https://via.placeholder.com/150" alt="Profile Photo">
+    <p>Web Developer | Frontend & Backend | JavaScript, Python, React</p>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I’m a passionate web developer with a background in computer science.
+      Skilled in creating interactive, responsive, and user-friendly websites.
+      <br><br>
+      <strong>Education:</strong> B.Tech in Computer Science<br>
+      <strong>Experience:</strong> Intern at XYZ Company, Freelance Web Developer
+    </p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="projects-container">
+      <div class="project">
+        <h3>Portfolio Website</h3>
+        <p>A responsive personal portfolio website to showcase my work.</p>
+      </div>
+      <div class="project">
+        <h3>Stopwatch App</h3>
+        <p>An interactive stopwatch built with HTML, CSS, and JavaScript.</p>
+      </div>
+      <div class="project">
+        <h3>Tic Tac Toe</h3>
+        <p>A fun web-based game with AI opponent option.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p>Or reach me at: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+  </section>
+</body>
+</html>
